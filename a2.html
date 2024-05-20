@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Assignment 2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="mathProblem">
+		<!-- leave this div empty!-->
+	</div>
+	<script>
+		//the following line access the div so we can write our word problem in it. 
+		let myDiv = document.getElementById("mathProblem");
+		//add some code on the lines below to generate two random numbers and store them in variables
+		let numberOne = Math.floor(Math.random() * 10);
+		let numberTwo = Math.floor(Math.random() * 10);
+		let answer1 = (numberOne + numberTwo);
+		//use concatenation to write your word problem and concatenate in the random numbers
+		let text1 = ("Q: Desiree has " + numberOne + " apples and " + numberTwo + " oranges, how many does she have total?");
+		let text2 = ("A:" + answer1);
+		//then this line will write your word problem out to the page!
+		myDiv.innerHTML = text1 + "<br />" + text2;
+	</script>
+</body>
+
+</html>
